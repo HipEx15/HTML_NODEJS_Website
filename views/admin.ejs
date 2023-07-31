@@ -1,0 +1,34 @@
+<section>
+
+    <p id = "welcome"> Alte operații: </p>
+
+    <section id="buttonsIndex">
+        <% if (user["rol"] == "ADMIN") {%>
+            <a href = "creare-bd" class="buttonMenu"> Creare BD</a>
+            <a href = "inserare-bd" class="buttonMenu"> Inserare BD</a>
+            <a href = "delete-table" class="buttonMenu"> Ștergere tabel</a>
+        <% } %>
+        </section>
+
+    <p id = "welcome"> Adaugă o băutură nouă: </p>
+
+        <form method="POST" action="/verificare-produs-nou" class="adauga_produs">
+
+            <fieldset class="question_box">
+
+                <label for="nume">Nume :</label><br>
+                <input type="text" id="nume" name="nume"><br><br>
+
+                <label for="info">Informații :</label><br>
+                <input type="text" id="info" name="info"><br><br>
+
+                <label for="pret">Preț:</label><br>
+                <input type="number" min="1" id="pret" name="pret" value="1"><br><br>
+            </fieldset><br/>
+
+            <input type="submit" value="Adaugă băutură" class="buttonDesign"/><br/>
+
+        </form>
+
+    <br/>
+</section>

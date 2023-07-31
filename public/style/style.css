@@ -1,0 +1,293 @@
+html, head, body, main
+{
+    margin: 0px;
+    padding: 0px;
+    background-color:  var(--background-color);
+    font-family: "Monaco", Monospace;
+    font-size: 100%; 
+    background-color: #FFFFFF;
+}
+
+footer
+{
+    color:#FFFFFF;
+    background-color: #000000;
+    text-align: center;
+}
+
+.logo
+{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.banner
+{
+    text-align: center;
+}
+
+.question_box
+{
+    margin-top: 25px;
+}
+
+.buttonDesign{
+    transition-duration: 0.4s;
+    border: 2px solid #555;
+    color: #070707;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 25px;
+    margin-left: 1310px;
+  }
+
+.buttonDesign:hover {
+    background-color: #18141c;;
+    color: #fffcfc;
+  }
+
+.buttonDesignLogin{
+    transition-duration: 0.4s;
+    border: 2px solid #555;
+    color: #070707;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+.buttonDesignLogin:hover {
+    background-color: #18141c;;
+    color: #fffcfc;
+  }
+
+  input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -6px;
+    position: relative;
+    background-color: #d2d2d2;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #555;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -6px;
+    position: relative;
+    background-color: #E10600;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #555;
+}
+
+.rezultat
+{
+    margin-left: 15px;
+    font-size: x-large;
+}
+
+#welcome
+{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.login_field
+{
+    margin-left: 5px;
+    margin-right: 5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.error
+{
+    color: #E10600;
+}
+
+nav {
+    margin-top: 20px;
+    padding: 18px;
+    margin-bottom: -19px;
+    background-color: #555;
+    font-family: "Monaco", Monospace;
+    color: #FFF9FB;
+    text-align: center;
+    font-size: 130%; 
+    margin-left: 1px;
+    margin-bottom: 1px;
+  }
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    font-size: 150%;
+    margin-right: 10px;
+    padding: 2px;
+    color: #FFF9FB;
+}
+
+h2
+{
+    margin-bottom: -19px;
+    margin-top: -1px;
+    background-color: #000000;
+    font-family: "Monaco", Monospace;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 1px;
+
+}
+
+#buttonsIndex 
+{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#buttonsIndex a:hover
+{
+    background-color: #999999;
+    color: black;
+}
+
+footer
+{
+    padding: 10px;
+}
+
+.buttonMenu
+{
+    font-size: 150%;
+    margin-right: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin-bottom: 75px;
+}
+
+#text
+{
+    text-align:justify;
+    padding: -35px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: larger;
+}
+
+.table_showcase
+{
+    margin: auto;  
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+} 
+
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table
+{
+    height: 50%;
+    width: 1400px;
+}
+
+#table_title
+{
+    text-align: center;
+}
+
+.button_add
+{
+    text-align: center;
+    padding: 5%;
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button_addHidden
+{
+    text-align: center;
+    padding: 5%;
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+nav a:hover 
+{
+    background-color: #555;
+    color: black;
+}
+
+.cart
+{
+    position: absolute;
+    padding-top: 0.5%;
+    padding-left: 31%;
+}
+
+.cart_admin
+{
+    position: absolute;
+    padding-top: 0.5%;
+    padding-left: 24%;
+}
+
+#eroareLogare
+{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color:red;
+}
+
+#quantity
+{
+    text-align: center;
+    border: solid;
+    background-color: #FFFFFF;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+  }
+
+.adauga_produs
+{
+    padding: 10px;
+    text-align: center;
+}

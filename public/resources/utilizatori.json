@@ -1,0 +1,6 @@
+[
+    {"utilizator": "test", "parola": "test", "rol": "USER"},
+    {"utilizator":"HipEx","parola":"random", "rol": "ADMIN"},
+    {"utilizator":"Another","parola":"oNE", "rol": "USER"},
+    {"utilizator":"XT","parola":"random", "rol": "USER"}
+]

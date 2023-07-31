@@ -1,0 +1,12 @@
+<% if(user){ %>
+    <p id="welcome">Rezultat chestionar</p>
+
+    <section class="rezultat">
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp În urma realizării chestionarului, punctajul obținut este de <%= good_response %> / <%= all_answers %> puncte !</p><br/>
+    </section>
+
+<% } else { %>
+
+    <p id="eroareLogare">Vă rugăm autentificați-vă.</p>
+
+<% } %>

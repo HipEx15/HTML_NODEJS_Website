@@ -1,0 +1,72 @@
+[
+	{
+        "intrebare": "Cât suc de cocos conține orice băutura PRIME ?",
+		"variante": [
+            "3%",
+            "10%",
+            "7%",
+            "12%"
+        ],
+		"corect": 1
+	},
+    {
+		"intrebare": "Ce suplimente conține băutura PRIME ?",
+		"variante": [
+            "Creatină",
+            "Omega3",
+            "BCAA",
+            "Biotina"
+        ],
+		"corect": 2
+	},
+    {
+		"intrebare": "Ce vitamine conține băutura PRIME ?",
+		"variante": [
+            "K",
+            "B",
+            "A",
+            "E"
+        ],
+		"corect": 1
+	},
+    {
+		"intrebare": "Căte grame de electroliți conține băutura PRIME ?",
+		"variante": [
+            "790g",
+            "800g",
+            "815g",
+            "825g"
+        ],
+		"corect": 3
+	},
+    {
+		"intrebare": "Cât zahăr conține orice băutură energizantă PRIME ?",
+		"variante": [
+            "3g",
+            "0g",
+            "5g",
+            "7g"
+        ],
+		"corect": 1
+	},
+    {
+		"intrebare": "Câtă cofeină conține orice băutură energizantă PRIME ?",
+		"variante": [
+            "200mg",
+            "225mg",
+            "150mg",
+            "175mg"
+        ],
+		"corect": 0
+	},
+    {
+		"intrebare": "Câți electroliți conține orice băutură energizantă PRIME ?",
+		"variante": [
+            "200mg",
+            "300mg",
+            "250mg",
+            "325mg"
+        ],
+		"corect": 1
+	}
+]

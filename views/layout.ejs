@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="public/style/style.css">
+        <title>PRIME Romania</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="public/resources/PrimeLogo.png">
+            </div>
+
+            <% if(user){ %>
+                <% if(user["rol"] == "ADMIN") {%>
+                    <nav>
+                        <a href="/admin" class="menu">Adaugă marfă</a>
+                        <a href="/" class="menu">Acasă</a>
+                        <a href="/chestionar" class="menu">Chestionar</a>
+                        <a href = "delogare" class="menu"> Delogare</a>
+                        <a href="/vizualizare-cos" class="cart_admin"><img src="public/resources/cart.png" alt="Coș de cumpărături"></a>
+                    </nav>
+                <% } else if (user["rol"] == "USER"){%>
+                    <nav>
+                        <a href="/" class="menu">Acasă</a>
+                        <a href="/chestionar" class="menu">Chestionar</a>
+                        <a href = "delogare" class="menu"> Delogare</a>
+                        <a href="/vizualizare-cos" class="cart"><img src="public/resources/cart.png" alt="Coș de cumpărături"></a>
+                    </nav>
+                <% } %>
+                <h2> Autentificat ca : <%- user["utilizator"] -%></h2>
+            <% } else { %>
+                <nav>
+                    <a href="/" class="menu">Acasă</a>
+                    <a href="/autentificare" class="menu">Autentificare</a>
+                </nav>
+                <h2>&nbsp</h2>
+            <% } %>
+
+            <br/>
+            <div class="banner">
+                <img src="public/resources/banner_1.png">
+            </div>  
+        </header>
+
+        <main>
+            <%- body %>
+        </main>
+
+        <footer>
+            <br/>
+            <p> DESPRE PRIME</p>
+            <br/>
+            <p> PRIME a fost dezvoltat pentru a umple golul dintre gustul excelent și sânâtate.<br/>
+                Cu arome îndrăznețe, potolitoare pentru a vă ajuta să vă împrospătați, să vă reumpleți și să vă alimentați, <br/>
+                PRIME este impulsul perfect pentru orice efort.<br/></p> 
+            © 2023 Arhip Constantin Alexandru
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,22 @@
+<section>
+
+    <p id="welcome">Autentificare</p>
+
+    <form action="/verificare-autentificare" method="post">
+        <br/>
+        <fieldset class="login_field">
+            <legend>Introduceți datele: </legend>
+                <br/>
+                <label for="utilizator">Nume utilizator</label><br/>
+                <br/><input id="utilizator" type="text" name="user" /><br/><br/>
+                <label for="parola">Parolă</label><br/>
+                <br/><input id="parola" type="password" name="password" /><br/>
+                <br/><input type="submit" value="Autentificare" class="buttonDesignLogin"/><br/>
+                <p class="error"><%= mesajEroare %></p>
+            </fieldset> 
+    </form>
+
+</section>
+
+
+

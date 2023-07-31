@@ -1,0 +1,66 @@
+<section>
+
+    <% if(user){ %>
+        <p id="welcome">Bine ați venit, <%=user["utilizator"] %>!</p>
+
+        <p id="text">
+            &emsp;&emsp; Am creat PRIME pentru a prezenta ceea ce se întâmplă atunci când oamenii se unesc ca frați și parteneri de afaceri pentru a umple golul în care gustul bun se întâlnește cu savoarea.
+            Am lansat primul nostru produs, PRIME Hydration în 2022 și, de atunci, am continuat să lucrăm nenumărate ore pentru a ne extinde pentru a ajunge pe noi piețe și a crea noi produse pe care știm că le veți iubi.
+            Am fost uimiți de procesul de creare a unui brand real și de depășire a unora dintre cele mai mari companii de băuturi din lume. În calitate de persoane noi în această piață, prețuim întotdeauna oportunitatea de a arăta lumii ce este posibil.
+            <br/>&emsp;&emsp;Acum că ne luptăm pentru a aduce PRIME pe locul 1 mondial și credem cu adevărat că cerul este limita.
+        </p>
+        
+        <br/>        
+    <% } else { %>
+        <p id="welcome">Bine ați venit!</p>
+
+        <p id="text">
+            &emsp;&emsp; Am creat PRIME pentru a prezenta ceea ce se întâmplă atunci când oamenii se unesc ca frați și parteneri de afaceri pentru a umple golul în care gustul bun se întâlnește cu savoarea.
+            Am lansat primul nostru produs, PRIME Hydration în 2022 și, de atunci, am continuat să lucrăm nenumărate ore pentru a ne extinde pentru a ajunge pe noi piețe și a crea noi produse pe care știm că le veți iubi.
+            Am fost uimiți de procesul de creare a unui brand real și de depășire a unora dintre cele mai mari companii de băuturi din lume. În calitate de persoane noi în această piață, prețuim întotdeauna oportunitatea de a arăta lumii ce este posibil.
+            <br/>&emsp;&emsp;Acum că ne luptăm pentru a aduce PRIME pe locul 1 mondial și credem cu adevărat că cerul este limita.
+        </p>
+    
+    <% } %>
+
+        <% if(bauturi){ %>  
+            <h1 id="table_title">Comandați băutura dorită</h1>
+
+            <table class="table_showcase">
+                <tr>
+                    <th>ID</th>
+                    <th>Nume produs</th>
+                    <th>Informații produs</th>
+                    <th>Preț (RON)</th>
+                    <th>Cantitate</th>
+                </tr>
+
+                <% for (var i = 0; i < bauturi.length; i++){ %>
+                    <tr>
+                        <td><%= bauturi[i].id %></td>
+                        <td><%= bauturi[i].nume %></td>
+                        <td><%= bauturi[i].informatii %></td>
+                        <td><%= bauturi[i].pret %></td>
+                        
+                        <% if(user){ %>
+                        <form action="/adaugare-cos" method="POST">
+                            <td><input type="number" id="quantity" name="id_quanty" min="1" value="1"></td>
+                            <td><button class="button_add" type = "submit" name="id" value="<%=bauturi[i].id%>">Adaugă în coș</button></td>   
+                        </form>
+                        <%}else{%>
+                            <td><input disabled type="number" id="quantity" name="id_quanty" value="0"></td>
+                            <td><button disabled class="button_addHidden">Adaugă în coș</button></td>
+                        <% } %>
+                       
+                    </tr>
+                <% } %>
+
+            </table>
+        <% } %>
+
+        <br/>
+        <br/>
+        <br/>
+    
+
+</section>

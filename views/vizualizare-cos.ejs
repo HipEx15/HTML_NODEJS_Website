@@ -1,0 +1,35 @@
+<section>
+    <% if(user){ %>
+        <p class="rezultat">Coșul dumneavoastră de cumpărături: </p>
+
+        <table class="table_showcase">
+            <tr>
+                <th>Nume produs</th>
+                <th>Informații produs</th>
+                <th>Preț (RON)</th>
+                <th>Cantitate</th>
+            </tr>
+            <% let sum=0 %>
+            <% if(bauturi){ %>  
+                <% bauturi.forEach((index) => { %>
+                    <% sum += parseInt(index.produs.pret) * parseInt(index.cantitate)%>
+                    <tr>
+                        <td><%= index.produs.nume%></td>
+                        <td><%= index.produs.informatii %></td>
+                        <td><%= index.produs.pret%></td>
+                        <td><%= index.cantitate %></td>
+                    </tr>
+                <% }); %>
+            <% } %>
+            </table>
+        <br/>
+        <br/>
+
+        <p class="rezultat">Total: <%= sum %> RON </p>      
+
+    <% } else { %>
+    
+        <p id="eroareLogare">Vă rugăm autentificați-vă.</p>
+    
+    <% } %>
+</section>

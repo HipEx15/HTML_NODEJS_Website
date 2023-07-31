@@ -1,0 +1,23 @@
+<section>
+
+    <% if(user){ %>
+        <p id="welcome">Răspundeți la următoarele întrebări</p>
+
+        <form action="/rezultat-chestionar" method="POST">
+            <%for( var index = 0 in intrebari) { %>
+                <fieldset class="question_box">
+                    <p><h3><%= intrebari[index].intrebare %></h3></p>
+                    <% for (var item = 0 in intrebari[index].variante) { %>
+                        <input type="radio" name="intrebare.<%=index%>" value="<%=item%>"/><%= intrebari[index].variante[item] %><br/>
+                    <% } %>
+                </fieldset>
+            <% } %>
+            <br/><input type="submit" value="Trimite chestionarul" class="buttonDesign"/><br/>
+                
+        </form>
+    <% } else { %>
+
+        <p id="eroareLogare">Vă rugăm autentificați-vă.</p>
+
+    <% } %>
+</section>
